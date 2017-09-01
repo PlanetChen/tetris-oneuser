@@ -449,11 +449,11 @@ def drawStage(drawScreen):
 
     # 特殊游戏状态的输出
     if gameOver:
-        printTxt("GAME OVER", 230, 200, defaultFont, backSurface, fontColor)
-        printTxt("<PRESS RETURN TO REPLAY>", 200, 260, defaultFont, backSurface, fontColor)
+        printTxt("GAME OVER", 190, 200, defaultFont, backSurface, fontColor)
+        printTxt("<PRESS RETURN TO REPLAY>", 130, 260, defaultFont, backSurface, fontColor)
     if pause:
-        printTxt("Game pausing", 230, 200, defaultFont, backSurface, fontColor)
-        printTxt("<PRESS RETURN TO CONTINUE>", 200, 260, defaultFont, backSurface, fontColor)
+        printTxt("Game pausing", 190, 200, defaultFont, backSurface, fontColor)
+        printTxt("<PRESS RETURN TO CONTINUE>", 130, 260, defaultFont, backSurface, fontColor)
 
 
 def process():
