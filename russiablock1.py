@@ -219,13 +219,12 @@ def sysInit():
     pg.init()
     screen = pg.display.set_mode((500, 550))
     backSurface = pg.Surface((screen.get_rect().width, screen.get_rect().height))
-    pg.display.set_caption("block")
+    pg.display.set_caption("Tetris")
     clock = pg.time.Clock()
     pg.mouse.set_visible(False)
 
     # 游戏全局变量初始化
-    defaultFont = pg.font.Font("yh.ttf", 16)  # yh.ttf这个字体文件请自行上网搜索下载，如果找不到就随便用个ttf格式字体文件替换一下。
-    #defaultFont = pg.font.Font("res/font/yh.ttf", 16)  # yh.ttf这个字体文件请自行上网搜索下载，如果找不到就随便用个ttf格式字体文件替换一下。
+    defaultFont = pg.font.Font(None,24)
     nowBlock = None
     nextBlock = None
     gameOver = False
